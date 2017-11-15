@@ -14,7 +14,6 @@ def insert():
     description = request.form['description']
     file = request.files['file']
 
-    headers = {'Content-Type': 'multipart/form-data'}
     data = {'description': description}
     files = {'file': (file.filename, file.stream, file.mimetype)}
     
