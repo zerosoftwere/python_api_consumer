@@ -6,3 +6,4 @@ RUN pip install -r requriements.txt
 
 COPY app.py staitc templates ./
 CMD ["gunicorn", "-c", "gunicorn.conf.py"]
+EXPOSE 8000
